@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background: #242624;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: #393b38;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 10px 10px 10px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+  padding-top: 25px;
+  position: relative;
+}
+
+nav a {
+  color: #bad6d5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+
+nav a:hover {
+  color: #c9c9c9;
+
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 0%;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.intro-text h1 {
+  font-size: 35px;
+  font-weight: 500;
+  background: white;
+  background: linear-gradient(to right, #bad6d5, #bad6d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #bad6d5;
+}
+
+.intro-text p {
+  margin-left: 0px;
+  font-size: 15px;
+  color: #bad6d5;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 260px;
+  right: 200px;
+}
